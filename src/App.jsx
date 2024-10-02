@@ -1,19 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import LoginForm from './Component/LoginForm' 
-import SignupForm from './Component/SignupForm'
+// App.js
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './AppRoutes'; // Import the routes
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <SignupForm />
-
-    </>
-  )
+    <BrowserRouter>
+        <AppRoutes />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
